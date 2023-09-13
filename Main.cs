@@ -11,5 +11,10 @@ class Main
 
         Interval intersection = Interval.FindIntersection(interval1, interval2);
         Console.WriteLine("Intersection of intervals: " + (intersection != null ? $"{intersection.Start}-{intersection.End}" : "None"));
+
+        Trojuhelnik trojuhelnik = new Trojuhelnik(3, 4, 5);
+        Console.WriteLine("Je rovnostranny: " + trojuhelnik.JeRovnostranny());
+        Console.WriteLine("Je rovnoramenny: " + trojuhelnik.JeRovnoramenny());
+        Console.WriteLine("Je pravouhly: " + trojuhelnik.JePravouhly());
     }
 }
