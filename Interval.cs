@@ -6,8 +6,8 @@ class Interval
 
     public Interval(int start, int end)
     {
-        Start = start;
-        End = end;
+        this.Start = start;
+        this.End = end;
     }
 
     public bool Contains(int value)
