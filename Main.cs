@@ -19,5 +19,19 @@ class Main
 
         Primka usecka = new Primka(new Point(1, 2), new Point(4, 6));
         Console.WriteLine("Delka usecky: " + usecka.Delka());
+
+        Potravina jidlo = new Potravina
+        {
+            Nazev = "Hamburger",
+            Hmotnost = 150,
+            EnergetickaHodnotaKcal = 300
+        };
+
+        double denniMinPrijemKcal = 2000;
+
+        Console.WriteLine($"Potravina: {jidlo.Nazev}");
+        Console.WriteLine($"Energeticka hodnota (kJ): {jidlo.EnergetickaHodnotaKJ}");
+        Console.WriteLine($"Energeticka hodnota (kcal): {jidlo.EnergetickaHodnotaKcal}");
+        Console.WriteLine($"Tvoøí {jidlo.ProcentDennihoMinKalorickehoPrijmu(denniMinPrijemKcal):0.##}% denního minimálního kalorického pøíjmu.");
     }
 }
