@@ -16,5 +16,8 @@ class Main
         Console.WriteLine("Je rovnostranny: " + trojuhelnik.JeRovnostranny());
         Console.WriteLine("Je rovnoramenny: " + trojuhelnik.JeRovnoramenny());
         Console.WriteLine("Je pravouhly: " + trojuhelnik.JePravouhly());
+
+        Primka usecka = new Primka(new Point(1, 2), new Point(4, 6));
+        Console.WriteLine("Delka usecky: " + usecka.Delka());
     }
 }
